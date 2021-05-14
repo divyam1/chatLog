@@ -1,4 +1,4 @@
-package com.demo.chatlog;
+package com.demo.chatlog.entity;
 
 public class Message {
 	private String messageId;
@@ -28,5 +28,14 @@ public class Message {
 	}
 	public void setIsSent(Boolean isSent) {
 		this.isSent = isSent;
+	}
+	
+	public Message(String messageId,Boolean isSent,String message,Long timeStamp) {
+		// TODO Auto-generated constructor stub
+		this.messageId =messageId;
+		this.isSent = isSent;
+		this.message = message;
+		this.timeStamp = timeStamp;
+		
 	}
 }
