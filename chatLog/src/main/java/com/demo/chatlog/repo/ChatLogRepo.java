@@ -9,4 +9,5 @@ import com.demo.chatlog.entity.ChatLog;
 public interface ChatLogRepo extends MongoRepository<ChatLog, String> {
 	
 	ChatLog findByUserId(String id);
+	
 }
